@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.astro";
+import QuoteSearch from "../components/search";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +13,7 @@ import Header from "../components/header.astro";
 <body>
     <Header />
     <h1>Search</h1>
+    <QuoteSearch client:load />
     <footer>
         &copy; Senda Arriaga
     </footer>
