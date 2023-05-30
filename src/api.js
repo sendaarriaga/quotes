@@ -6,16 +6,21 @@
 //
 
 export const loadQuotes = async () => {
-  const response = await fetch(`https://type.fit/api/quotes`);
+  const response = await fetch(`https://api.api-ninjas.com/v1/quotes?limit=10`,{ 
+            headers: {
+              'x-api-key': 'pYcZQSGvKJZCghIo/2ORmA==WmsjHmK8RmvrLvAq'
+            }
+          });
   const quotes = await response.json();
   return quotes;
 };
 
-export const searchQuotes = async (query) => {
-  const queryParams = query !== "" ? `?quote_id=${query}` : "";
-  const response = await fetch(`https://type.fit/api/quotes`
-    //`https://https://type.fit/api/quotes/:${queryParams}`
-  );
+export const searchQuotes = async (category) => {
+  const response = await fetch(`https://api.api-ninjas.com/v1/quotes?limit=10&category=`+category,{ 
+            headers: {
+              'X-Api-Key': 'pYcZQSGvKJZCghIo/2ORmA==WmsjHmK8RmvrLvAq'
+            }
+          });
   const quotes = await response.json();
   return quotes;
 };
