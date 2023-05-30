@@ -40,17 +40,7 @@ function QuoteSearch() {
   return (
     <div className="quote-search">
       <div className="category">
-          <h3>By Quote:</h3>
-          <input type="text" ref={searchRef} placeholder="Write the quote..."/>
-          <button onClick={doSearch}>Search</button>
-      </div>
-      <div className="author">
-          <h3>By Category:</h3>
-          <input type="text" ref={searchRef} placeholder="Write the author..."/>
-          <button onClick={doSearch}>Search</button>
-      </div>
-      <div className="category">
-          <h3>By Category:</h3>
+          <h3>Search by category:</h3>
           <input type="text" ref={searchRef} placeholder="Write the category..."/>
           <button onClick={doSearch}>Search</button>
       </div>
