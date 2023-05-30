@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { loadQuotes, searchQuotes } from "../api";
+import { searchQuotes } from "../api";
 
 
 const QuoteList = ({ quotes }) => {
