@@ -6,7 +6,7 @@
 //
 
 export const loadQuotes = async () => {
-  const response = await fetch(`https://api.api-ninjas.com/v1/quotes?limit=10`,{ 
+  const response = await fetch(`https://api.api-ninjas.com/v1/quotes?limit=1`,{ 
             headers: {
               'x-api-key': 'pYcZQSGvKJZCghIo/2ORmA==WmsjHmK8RmvrLvAq'
             }
