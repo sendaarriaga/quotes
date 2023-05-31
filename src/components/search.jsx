@@ -28,7 +28,7 @@ function QuoteSearch() {
   const [quotes, setQuotes] = useState(null);
 
   useEffect(() => {
-    searchQuote(search).then((quotes) => setQuotes(quotes));
+    searchQuotes(search).then((quotes) => setQuotes(quotes));
   }, [search]);
 
   const doSearch = (event) => {
