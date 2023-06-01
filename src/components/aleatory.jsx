@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { loadQuotes} from "../api";
+import './style/aleatory.css';
 
 
 const QuoteList = ({ quotes }) => {
@@ -11,12 +12,11 @@ const QuoteList = ({ quotes }) => {
     return <div>No quotes.</div>;
   }
   return (
-    <div className="quotes-list">
+    <div className="quote">
       {quotes.map((quote) => (
         <div className="quote">
           <div className="title">{quote.quote}</div>
           <div className="author">{quote.author}</div>
-          <div className="category">{quote.category}</div>
         </div>
       ))}
     </div>
