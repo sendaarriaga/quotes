@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { searchQuotes } from "../api";
-
+import './style/search.css';
 
 const QuoteList = ({ quotes }) => {
   if (quotes === null) {
@@ -15,7 +15,7 @@ const QuoteList = ({ quotes }) => {
         <div className="quote">
           <div className="title">{quote.quote}</div>
           <div className="author">{quote.author}</div>
-          <div className="category">{quote.category}</div>
+          <div className="category">Category of {quote.category}</div>
         </div>
       ))}
     </div>
@@ -39,8 +39,8 @@ function QuoteSearch() {
 
   return (
     <div className="quote-search">
+      <p>Search by category:</p>
       <div className="category">
-          <h3>Search by category:</h3>
           <input type="text" ref={searchRef} placeholder="Write the category..."/>
           <button onClick={doSearch}>Search</button>
       </div>
