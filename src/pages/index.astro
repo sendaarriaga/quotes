@@ -1,36 +1,10 @@
 ---
 import Header from "../components/header.astro";
+import './style/index.css';
+import HeaderHTML from "../layouts/HeaderHTML.astro";
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Quotes</title>
-	<style>
-		h1 {
-			display: flex;
-			justify-content: center;
-			font-size:150px;
-			font-family: serif;
-			font-style: oblique;
-			background-color: rgba(147, 147, 246, 0.723);
-			padding: 5em;
-			padding: 100px;
-		}
-		body{
-			background-image:url(blue.png);
-		}
-		footer {
-			padding: 1em 0;
-			font-size: 25px;
-			color: black;
-			display: flex;
-			justify-content: flex-end;
-		}
-	</style>
-</head>
+<HeaderHTML title="Aleatory Quote">
+</HeaderHTML>
 <body>
 	<Header />
 	<h1>Quotes</h1>

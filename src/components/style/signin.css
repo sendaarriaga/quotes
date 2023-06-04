@@ -61,3 +61,8 @@
     gap: 8px;
     margin: 10px;
   }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 15em;
+}

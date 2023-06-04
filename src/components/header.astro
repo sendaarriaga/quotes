@@ -1,41 +1,14 @@
+---
+import "./style/header.css";
+---
 <header>
-    <div id="home">
+    <div class="left">
       <a href="/">Home</a>
+      <a href="/search">Search</a>
+      <a href="/aleatory">Aleatory</a>
     </div>
-    <a href="/search">Search</a>
-    <a href="/aleatory">Aleatory</a>
-    <a href="/signup" class="SignUp">Sign Up</a>
-    <a href="/signin" class="SignIn">Sign In</a>
-  </header>
-
-  <style>
-    header {
-      background-color: rgb(41, 11, 124);
-      color: white;
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      padding-left: 1em;
-      padding-right: 1em;
-      font-size: 25px;
-    }
-    #home {
-      margin-right: 1.5em;
-    }
-    header a {
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-      text-decoration: none;
-      color: white;
-      border-bottom: 3px solid transparent;
-      padding: 0.5em;
-      padding-bottom: 0.3em;
-    }
-    header a:hover {
-      border-bottom: 3px solid white;
-      box-sizing: border-box;
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-    
-  </style>
-  
+    <div class="right">
+      <a href="/signup" class="SignUp">Sign Up</a>
+      <a href="/signin" class="SignIn">Sign In</a>
+  </div>
+</header>

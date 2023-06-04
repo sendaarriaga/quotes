@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style/signup.css";
 
 export default function SignUp() {
-  const [userInfo, setUserInfo] = useState({
+  const [User, setUser] = useState({
     name: "",
     mail: "",
     phone: ""
@@ -10,33 +10,33 @@ export default function SignUp() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setUserInfo({ ...userInfo, [name]: value });
+    setUser({ ...User, [name]: value });
   };
 
   return (
     <form>
-      <label htmlFor="name">Nombre completo</label>
+      <p className="name">Nombre completo</p>
       <input
         name="name"
         type="text"
-        value={userInfo.name}
+        value={User.name}
         onChange={handleChange}
       />
 
-      <label htmlFor="mail">Correo electrónico</label>
+      <p className="mail">Correo electrónico</p>
       <input
         name="mail"
         type="email"
-        value={userInfo.mail}
+        value={User.mail}
         onChange={handleChange}
       />
 
-      <label htmlFor="phone">Teléfono móvil</label>
+      <p className="phone">Teléfono móvil</p>
       <input
         name="phone"
         type="tel"
         placeholder="+34"
-        value={userInfo.phone}
+        value={User.phone}
         onChange={handleChange}
       />
       <input type="submit" />
