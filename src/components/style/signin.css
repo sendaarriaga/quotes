@@ -1,33 +1,64 @@
-.app {
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-color: #f8f9fd;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
+body {
+  background: #ffffff;
+}
+
+.login-form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+input[type="password"] {
     height: 25px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+  }  
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 218, 218);
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
   }
   
-  input[type="submit"] {
-    margin-top: 10px;
-    cursor: pointer;
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
     font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
-    color: #fff;
-    padding: 10px 20px;
+    font-weight: 200;
   }
   
-  input[type="submit"]:hover {
-    background: #6cf0c2;
+  button {
+    background: #5a66a4;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: #4858aa;
+  }
+  
+  button:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+  
+  input:disabled {
+    opacity: 0.4;
   }
   
   .button-container {
@@ -38,7 +69,6 @@
   .login-form {
     background-color: white;
     padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .list-container {
@@ -52,7 +82,8 @@
   
   .title {
     font-size: 25px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   
   .input-container {
