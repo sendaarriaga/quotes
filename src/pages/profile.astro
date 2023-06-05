@@ -1,0 +1,32 @@
+---
+import Header from "../components/header.astro";
+import HeaderHTML from "../layouts/HeaderHTML.astro";
+import './style/profile.css';
+---
+<HeaderHTML title="Profile">
+</HeaderHTML>
+<body>
+    <Header />
+    <h1>My profile</h1>
+    <div class="frame">
+        <div class="center">
+            <div class="profile">
+                <div class="circle"></div>
+                <p class="name">Name</p>
+                <p class="job">user1@hotmail.com</p>
+                <button class="btn">My plan</button>
+                <button class="btn">Modify</button>
+            </div>
+                
+            <div class="stats">
+                <p class="value"> <b>523</b> Quotes</p>
+                <p class="value"> <b>1089</b> Likes</p>
+                <p class="value"> <b>109</b> Followers</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; Senda Arriaga
+    </footer>
+</body>
+</html>

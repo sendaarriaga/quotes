@@ -54,7 +54,7 @@ function SignIn() {
   return (
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ? <div className="succes">User is successfully logged in <div><button href="../">Home</button><button href="../profile">Your Profile</button></div></div> : SignInForm}
+      {isSubmitted ? <div className="succes">User is successfully logged in <div><a href="../"><button>Home</button></a><a href="../profile"><button>Your Profile</button></a></div></div> : SignInForm}
     </div>
   );
 }
