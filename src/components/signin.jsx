@@ -42,12 +42,11 @@ function SignIn() {
 
   const SignInForm = (
     <form>
-          <p>Username </p>
-          <input type="text" name="ename" required />      
-          <p>Password </p>
-          <input type="password" name="epass" required />
-          {ErrorMessage(true)}
-    
+        <p>Username </p>
+        <input type="text" name="ename" required />      
+        <p>Password </p>
+        <input type="password" name="epass" required />
+        {ErrorMessage(true)}
         <button onClick={Search}>SIGN IN</button>
     </form>
   );
@@ -55,7 +54,7 @@ function SignIn() {
   return (
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ? <div>User is successfully logged in</div> : SignInForm}
+      {isSubmitted ? <div className="succes">User is successfully logged in <div><button href="../">Home</button><button href="../profile">Your Profile</button></div></div> : SignInForm}
     </div>
   );
 }

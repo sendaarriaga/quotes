@@ -27,6 +27,7 @@ button {
   text-transform: uppercase;
   border: none;
   margin-top: 40px;
+  margin-left: 5px;
   padding: 15px;
   font-size: 16px;
   font-weight: 100;
@@ -41,6 +42,14 @@ button:hover {
 .error {
   color: red;
   font-size: 12px;
+}
+
+.succes {
+  padding-top: 30px;
+  color: green;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
