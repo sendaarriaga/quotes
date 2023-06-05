@@ -10,14 +10,12 @@ body{
 }
 
 .frame {
-    width: 400px;
     height: 400px;
     box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
     background: linear-gradient(to top right, #6ceee5 0%, #4e61ca 100%);
     font-family: 'Open Sans', Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    margin-left: 25em;
 }
 
 .center {
