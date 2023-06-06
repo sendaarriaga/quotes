@@ -61,7 +61,7 @@ function SignIn() {
   return (
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ?  <a onClick={openprofile("../profile")}/> : SignInForm}
+      {isSubmitted ?  <div className="succes">User is successfully logged in <div><a href="../"><button>Home</button></a> <a onClick={openprofile("../profile")}/></div></div> : SignInForm}
     </div>
   );
 }

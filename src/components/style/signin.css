@@ -26,6 +26,14 @@ input {
   height: 25px;
 }
 
+.succes {
+  padding-top: 30px;
+  color: green;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .conditions {
   display: flex;
   flex-direction: row;
