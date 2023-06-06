@@ -40,10 +40,17 @@ function SignIn() {
     <div className="error">{messages.message}</div>
   );
 
+  function openprofile (url) {
+    window.open(url+'?name='+document.getElementById('ename').value); 
+    return false;
+
+  }
+
   const SignInForm = (
+
     <form>
         <p>Username </p>
-        <input type="text" name="ename" required />      
+        <input type="text" name="ename" id="ename" required />      
         <p>Password </p>
         <input type="password" name="epass" required />
         {ErrorMessage(true)}
@@ -54,9 +61,10 @@ function SignIn() {
   return (
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ? <div className="succes">User is successfully logged in <div><a href="../"><button>Home</button></a><a href="../profile"><button>Your Profile</button></a></div></div> : SignInForm}
+      {isSubmitted ?  <a onClick={openprofile("../profile")}/> : SignInForm}
     </div>
   );
 }
+
 
 export default SignIn;

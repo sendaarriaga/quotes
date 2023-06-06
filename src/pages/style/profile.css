@@ -33,6 +33,12 @@ body{
 	height: 320px;
 	text-align: center;
 	
+}
+.profile input{
+    outline: none;
+    border: none;
+    text-align: center;
+    padding-top: 15px;
 }	
 .circle {
     width: 76px;
@@ -41,10 +47,8 @@ body{
     border-color: blue;
     border-radius: 50%;
     margin: 38px auto 0 auto;
-}
-
-.name {
-    font-size: 15px;
+    background-size: cover;
+    background-image: url(profile.jpg);
 }
 
 .job {

@@ -3,8 +3,10 @@ import Header from "../components/header.astro";
 import HeaderHTML from "../layouts/HeaderHTML.astro";
 import './style/profile.css';
 ---
+
 <HeaderHTML title="Profile">
 </HeaderHTML>
+
 <body>
     <Header />
     <h1>My profile</h1>
@@ -12,8 +14,8 @@ import './style/profile.css';
         <div class="center">
             <div class="profile">
                 <div class="circle"></div>
-                <p class="name">Name</p>
-                <p class="job">user1@hotmail.com</p>
+                <input type="text" id="user"></input>
+                <p class="job">user@hotmail.com</p>
                 <button class="btn">My plan</button>
                 <button class="btn">Modify</button>
             </div>
@@ -29,4 +31,12 @@ import './style/profile.css';
         &copy; Senda Arriaga
     </footer>
 </body>
+
+
+<script type="text/javascript">
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    document.getElementById("user").value = url.searchParams.get("name");
+</script>
+
 </html>

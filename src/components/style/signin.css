@@ -12,6 +12,11 @@
   text-align: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 
 input {
   display: flex;
@@ -19,6 +24,13 @@ input {
   padding: 10px 15px;
   font-size: 14px;
   height: 25px;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  align-items: center;
 }
   
 button {
@@ -44,13 +56,6 @@ button:hover {
   font-size: 12px;
 }
 
-.succes {
-  padding-top: 30px;
-  color: green;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 
 footer {
     display: flex;

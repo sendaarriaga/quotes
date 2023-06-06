@@ -14,16 +14,19 @@ export default function SignUp() {
       <div className="title">Sign Up</div>
       <form>
         <p className="name">Name:</p>
-        <input name="name" type="text" value={User.name} onChange={handleChange}/>
+        <input name="name" type="text" value={User.name} onChange={handleChange} required/>
 
 
         <p className="mail">Mail:</p>
-        <input name="mail" type="email" value={User.mail} onChange={handleChange}/>
+        <input name="mail" type="email" value={User.mail} onChange={handleChange} required/>
 
 
         <p className="phone">Tel:</p>
-        <input name="phone" type="tel" placeholder="+34" value={User.phone} onChange={handleChange}/>
+        <input name="phone" type="tel" placeholder="+34" value={User.phone} onChange={handleChange} required/>
 
+        <div className="conditions">
+          <input type="checkbox" required/> <p>I have read and accept the terms and conditions.</p>
+        </div>
         <button>SIGN UP</button>
       </form>
     </div>
