@@ -6,7 +6,7 @@ h1 {
 }
 
 body{
-    background-image:url(blue.png);
+    background-image:url(../../public/blue.png);
 }
 
 .frame {
