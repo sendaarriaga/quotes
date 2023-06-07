@@ -40,9 +40,9 @@ function SignIn() {
     <div className="error">{messages.message}</div>
   );
 
-  function openprofile (url) {
-    window.open(url+'?name='+document.getElementById('ename').value); 
-    return false;
+  function openprofile () {
+    var url='../profile?name='+document.getElementById('ename').value; 
+    return url;
 
   }
 
@@ -61,7 +61,7 @@ function SignIn() {
   return (
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ?  <div className="succes">User is successfully logged in <div><a href="../"><button>Home</button></a> <a onClick={openprofile("../profile")}/></div></div> : SignInForm}
+      {isSubmitted ?  <div className="succes">User is successfully logged in <div><a href="../"><button>Home</button></a> <a href={openprofile()}><button>Profile</button></a></div></div> : SignInForm}
     </div>
   );
 }

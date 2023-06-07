@@ -1,3 +1,16 @@
+# MY WEB PAGE FOR FINAL PROJECT:
+https://quotes-five-xi.vercel.app/
+Para logearse:
+      username: "User1",
+      password: "123456"
+-----------o-----------------
+      username: "User2",
+      password: "123456"
+    
+
+# MY PUBLIC REPOSITORY HOSTED ON GitHub:
+https://github.com/sendaarriaga/quotes.git
+
 # Astro Starter Kit: Basics
 
 ```
