@@ -21,6 +21,10 @@ body{
     font-weight: bold;
 }
 
+.quote-search select{
+    font-size: 14px;
+}
+
 .category{
     display: flex;
     font-family: 'Arial Narrow';
@@ -46,7 +50,7 @@ button {
     font-weight: bold;
     font-family: 'Arial Narrow';
     background-color: rgb(16, 177, 159);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 button:hover {
